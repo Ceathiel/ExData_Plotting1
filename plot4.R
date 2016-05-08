@@ -1,4 +1,4 @@
-# Plot 3 - Source code for creating plot 4
+# Plot 4 - Source code for creating plot 4
 # Please make sure household_power_consumption.txt is in your working directory
 plot4 <- function(x="household_power_consumption.txt") {
   
