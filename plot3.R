@@ -25,7 +25,7 @@ plot3 <- function(x="household_power_consumption.txt") {
   
   # Create plot
   par(mfrow = c(1, 1), mar = c(3, 5, 2, 2))
-  with(powerData, plot(DateTime, Sub_metering_1, type="l", ylab = "Global Active Power (kilowatts)"))
+  with(powerData, plot(DateTime, Sub_metering_1, type="l", ylab = "Energy sub metering"))
   lines(powerData$DateTime, powerData$Sub_metering_2, type="l", col="red")
   lines(powerData$DateTime, powerData$Sub_metering_3, type="l", col="blue")
   legend("topright", pch="-", col=c("black", "blue", "red"), legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), cex=0.8)
